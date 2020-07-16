@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>100 SMM</title><!--meta(name="description", content=description)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;display=swap&amp;subset=cyrillic-ext"
+          rel="stylesheet">
+    <link rel="shortcut icon" href="https://profilaktika.agency/100smm/favicon.ico" type="image/x-icon">
+    <!-- <link href="https://profilaktika.agency/100smm/styles/app.7a98d53d335f28cf8ce4.css" rel="stylesheet"> -->
+    <link href="styles/app.7a98d53d335f28cf8ce4.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="grid">
+    <div class="blur"></div>
+<header class="header">
+    <div class="container">
+        <div class="header__wrapper">
+            <div class="header__left">
+                <a href="https://profilaktika.agency/education">
+                	<!-- <div class="logo logo_hide"
+                     style="background-image: url('https://profilaktika.agency/100smm/profil_edu_logo.svg')"></div> -->
+                     <div class="logo logo_hide"
+                     style="background-image: url('./images/profil_edu_logo.png')"></div>
+                	<!-- <div class="mobile-logo" style="background-image: url('https://profilaktika.agency/100smm/logo_mini_blue.svg')"></div> -->
+                	<div class="mobile-logo" style="background-image: url('images/logo_m.png')"></div>
+                </a>
+            </div>
+            <div class="logo__text only_mobile">profilaktika education</div>
+            <div class="header__right">
+                <nav class="nav js-navigation"><a class="nav__item" href="#about">О курсе</a><a class="nav__item"
+                                                                                                href="#packages">Пакеты
+                    обучения</a><a class="nav__item" href="#program">Программа</a><a class="nav__item" href="#teachers">Преподаватели</a>
+                </nav>
+                <div class="header__button"><a class="button button_transparent js-sign-up"
+                                               href="#packages">Записаться</a></div>
+                <div class="mobile-menu-button js-mobile-menu-trigger"><span class="mobile-menu-button__el"></span><span
+                        class="mobile-menu-button__el"></span><span class="mobile-menu-button__el"></span></div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="grid__content">
+    <div class="mobile-navigation">
+        <nav class="mobile-nav js-mobile-navigation"><a class="mobile-nav__item" href="#about">О курсе</a><a
+                class="mobile-nav__item" href="#packages">Пакеты обучения</a><a class="mobile-nav__item"
+                                                                                href="#program">Программа</a><a
+                class="mobile-nav__item" href="#teachers">Преподаватели</a></nav>
+    </div>
+    <section class="section1">
+        <div class="banner">
+            <div class="container">
+                <div class="banner__inner">
+                    <div class="banner__left">
+                        <div class="banner__text1">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="329" height="74" viewBox="0 0 329 74">
+                                <image id="_онлайн-курс" width="329" height="74"
+                                       xlink:href="data:img/png;base64,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"/>
+                            </svg>
+                        </div>
+                        <div class="banner__text2">
+                            <img src="images/100SMM.png" alt="">
+                        </div>
+                        <div class="banner__text3">Основы<br>продвижения<br>в соцсетях</div>
+                        <div class="banner__button"><a class="button js-sign-up" href="#packages">Записаться на курс</a>
+                        </div>
+                    </div>
+                    <div class="banner__right">
+                        <div class="banner__image"
+                             style="background-image: url('https://profilaktika.agency/100smm/girl.png')"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner__grid"></div>
+            <div class="banner__star_2"></div>
+        </div>
+        <div class="section1__inner">
+            <div class="container">
+                <div class="section1__items">
+                    <div class="section1__item"><p class="section1__item-title">7</p>
+                        <p class="section1__item-text">Лекций</p></div>
+                    <div class="section1__item"><p class="section1__item-title">2</p>
+                        <p class="section1__item-text">Пакета<br>обучения</p></div>
+                    <div class="section1__item"><p class="section1__item-title">4</p>
+                        <p class="section1__item-text">Спикера</p></div>
+                    <div class="section1__item"><p class="section1__item-title">100<span class="section1__item-percent">%</span>
+                    </p>
+                        <p class="section1__item-text">SMM</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2" id="about">
+        <div class="container"><h3 class="grid__title section2__title">О курсе</h3>
+            <div class="section2-desc">
+                <div class="section2-desc__item">
+                    <div class="section2-desc__count">1)</div>
+                    <p class="section2-desc__text section2-desc__mb"><b class="section2-desc__bold-text">100% SMM —
+                        уникальный курс<br class="only_desktop"> от креативного агентства «PROFILAKTIKA»,</b> которое имеет большой
+                        опыт и сильную экспертизу <br class="only_desktop"> в продвижении коммерческих аккаунтов разных <br class="only_desktop"> видов бизнеса.</p>
+                    <p class="section2-desc__bold-text section2-desc__mb">Узнайте все, что должен знать хороший <br class="only_desktop">SMM-менеджер!
+                    </p>
+                    <p class="section2-desc__text">Мы собрали для вас самую важную <br class="only_mobile"> и актуальную информацию в простом <br class="only_mobile"> и
+                        лаконичном виде!<br><span class="only_desktop">Без воды и устаревших данных.</span></p></div>
+                <div class="section2-desc__item">
+                    <div class="section2-desc__count">2)</div>
+                    <p class="section2-desc__text section2-desc__mb">Авторы и преподаватели курса — лучшие сотрудники <br class="only_desktop">
+                        SMM-отдела агентства. Практикующие
+                        специалисты, которые каждый день варятся в этой каше и знают, <br class="only_desktop">о чем говорят.</p>
+                    <p class="section2-desc__text section2-desc__mb"><b class="section2-desc__bold-text">Мы на рынке SMM
+                        более 5 лет </b>и делимся <br class="only_desktop">реальным опытом работы <br class="only_mobile"> в регионах России.</p>
+                    <p class="section2-desc__text">За последний год мы выпустили более <b
+                            class="section2-desc__bold-text">100 студентов </b>на наших оффлайн-курсах и теперь готовы
+                        делиться опытом в онлайн.</p></div>
+            </div>
+        </div>
+        <div class="section2-vertical">
+            <div class="section2-vertical__line"></div>
+            <div class="section2-vertical__text">100% smm</div>
+        </div>
+    </section>
+    <section class="section7" id="program">
+        <div class="program__grid only_desktop"></div>
+        <div class="container"><h3 class="grid__title section7__title">Программа</h3>
+            <div class="program">
+                
+                <div class="program__left js-program">
+                    <div class="program__item">
+                        <div class="program__count">1)</div>
+                        <div class="program__header">
+                            <div class="program__header-count">1)</div>
+                            <div class="program__title">Стратегия</div>
+                            <div class="program__arrow-wrap">
+                                <div class="program__arrow"></div>
+                            </div>
+                        </div>
+                        <ul class="program__list">
+                            <li class="program__list-item">Брифинг клиента</li>
+                            <li class="program__list-item">Коммерческое предложение</li>
+                            <li class="program__list-item">Основные составляющие стратегии продвижения</li>
+                            <li class="program__list-item">Определение целей продвижения и основных KPI</li>
+                        </ul>
+                    </div>
+                    <div class="program__item">
+                        <div class="program__count">2)</div>
+                        <div class="program__header">
+                            <div class="program__header-count">2)</div>
+                            <div class="program__title">Контент</div>
+                            <div class="program__arrow-wrap">
+                                <div class="program__arrow"></div>
+                            </div>
+                        </div>
+                        <ul class="program__list">
+                            <li class="program__list-item">Что такое контент?</li>
+                            <li class="program__list-item">Тренды в SMM</li>
+                            <li class="program__list-item">Хороший контент — это какой?</li>
+                            <li class="program__list-item">Как организовать и провести фотосъёмку</li>
+                            <li class="program__list-item">Оформление профиля в Instagram</li>
+                            <li class="program__list-item">Приложения для планирования постов</li>
+                        </ul>
+                    </div>
+                    <div class="program__item">
+                        <div class="program__count">3)</div>
+                        <div class="program__header">
+                            <div class="program__header-count">3)</div>
+                            <div class="program__title">Визуальный контент</div>
+                            <div class="program__arrow-wrap">
+                                <div class="program__arrow"></div>
+                            </div>
+                        </div>
+                        <ul class="program__list">
+                            <li class="program__list-item">Что такое визуальный контент?</li>
+                            <li class="program__list-item">Программы, в которых можно создавать
+                                визуальный контент на компьютере
+                            </li>
+                            <li class="program__list-item">Программы, в которых можно создавать
+                                визуальный контент на телефоне.<br>Как ими пользоваться?
+                            </li>
+                            <li class="program__list-item">Какие форматы изображений и видео
+                                использовать в социальных сетях?
+                            </li>
+                            <li class="program__list-item">Как работать со Stories?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program__right js-program">
+                    <div class="program__item">
+                        <div class="program__count">4)</div>
+                        <div class="program__header">
+                            <div class="program__header-count">4)</div>
+                            <div class="program__title">Копирайтинг</div>
+                            <div class="program__arrow-wrap">
+                                <div class="program__arrow"></div>
+                            </div>
+                        </div>
+                        <ul class="program__list">
+                            <li class="program__list-item">Тренды в копирайтинге для соцсетей</li>
+                            <li class="program__list-item">Что такое Tone of Voice?</li>
+                            <li class="program__list-item">Как вызвать доверие к бренду с помощью текстов</li>
+                            <li class="program__list-item">Что главное в тексте и как с этим работать?</li>
+                            <li class="program__list-item">Как правильно оформлять тексты?</li>
+                            <li class="program__list-item">Как сделать так, чтобы текст дочитали?</li>
+                        </ul>
+                    </div>
+                    <div class="program__item">
+                        <div class="program__count">5)</div>
+                        <div class="program__header">
+                            <div class="program__header-count">5)</div>
+                            <div class="program__title">Таргетинг</div>
+                            <div class="program__arrow-wrap">
+                                <div class="program__arrow"></div>
+                            </div>
+                        </div>
+                        <ul class="program__list">
+                            <li class="program__list-item">Что такое таргетированная реклама?</li>
+                            <li class="program__list-item">Основы сегментирования аудитории</li>
+                            <li class="program__list-item">Знакомство с рекламными кабинетами VK и Facebook</li>
+                            <li class="program__list-item">Аналитика рекламных кампаний и основные KPI</li>
+                        </ul>
+                    </div>
+                    <div class="program__item">
+                        <div class="program__count">6)</div>
+                        <div class="program__header">
+                            <div class="program__header-count">6)</div>
+                            <div class="program__title">Продвижение</div>
+                            <div class="program__arrow-wrap">
+                                <div class="program__arrow"></div>
+                            </div>
+                        </div>
+                        <ul class="program__list">
+                            <li class="program__list-item">Конкурсы</li>
+                            <li class="program__list-item">Кросс-маркетинг</li>
+                            <li class="program__list-item">Посевы в релевантных сообществах</li>
+                            <li class="program__list-item">Работа с блогерами</li>
+                            <li class="program__list-item">Взаимодействие online и offline</li>
+                        </ul>
+                    </div>
+                    <div class="program__item">
+                        <div class="program__count">7)</div>
+                        <div class="program__header">
+                            <div class="program__header-count">7)</div>
+                            <div class="program__title">Как найти клиентов</div>
+                            <div class="program__arrow-wrap">
+                                <div class="program__arrow"></div>
+                            </div>
+                        </div>
+                        <ul class="program__list">
+                            <li class="program__list-item">Фриланс</li>
+                            <li class="program__list-item">Работа в агентстве</li>
+                            <li class="program__list-item">Кейсы</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container"><h3 class="grid__title section4__title section4__title_mob-hide">Важность профессии
+            SMM</h3>
+            <h3 class="grid__title section4__title section4__title_desktop-hide">Профессия SMM</h3>
+            <div class="importance">
+                <div class="importance__item"><p class="importance__text">Относительно
+                    начала года спрос 
+                    на специалистов<br class="only_mobile">
+                    по SMM вырос<br> на<b class="importance__bold importance__bold_inline">74<span class="importance__percent">%</span></b> <br>и
+                    продолжает расти
+                    с каждым годом.</p></div>
+                <div class="importance__item"><p class="importance__text">Ежедневно более<br><b class="importance__bold importance__bold_inline">3000</b>компаний ищут SMM-специалиста
+                    <br>и готовы платить
+                    <br>за услуги от 20 000₽
+                    <br>до 150 000₽ в среднем.</p></div>
+                <div class="importance__item"><p class="importance__text">Знания,
+                    полученные<br> на курсе<b class="importance__bold">100<span class="importance__percent">%</span> SMM</b>вы
+                    сможете сразу применять в работе,
+                    <br>а работодатель 
+                    <br>по достоинству оценит ваши умения.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="container">
+            <h3 class="grid__title section5__title only_desktop">Выберите свой курс</h3>
+            <h3 class="grid__title section5__title only_mobile">Выберите свой курс и запишитесь прямо сейчас!</h3>
+            <div class="course">
+                <div class="course__wrapper">
+                    <div class="course__star only_desktop"></div>
+                    <div class="course__inner"><h4 class="course__title">Базовый</h4>
+                        <div class="course__subtitle">
+                            <div class="course__subtitle-l">7</div>
+                            <div class="course__subtitle-r">лекций от практикующих
+                                специалистов:
+                            </div>
+                        </div>
+                        <ul class="course-topics">
+                            <li class="course-topics__item">— Стратегия</li>
+                            <li class="course-topics__item">— Контент</li>
+                            <li class="course-topics__item">— Визуальный контент</li>
+                            <li class="course-topics__item">— Копирайтинг</li>
+                            <li class="course-topics__item">— Таргетинг</li>
+                            <li class="course-topics__item">— Продвижение</li>
+                            <li class="course-topics__item">— Как найти клиентов</li>
+                        </ul>
+                        <p class="course__price">стоимость: <b class="course__price-bold course__price_old">1 900 ₽<span
+                                class="course__price-new">900 ₽</span></b></p>
+                        <div class="course__button"><a class="button" href="https://learme.ru/auth/payment/course/2585">Записаться
+                            на курс</a></div>
+                    </div>
+                </div>
+                <div class="course__wrapper course__wrapper_full">
+                    <div class="course__star only_desktop"></div>
+                    <div class="course__crown">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67"
+                             height="37" viewBox="0 0 67 37">
+                            <image id="korona" width="67" height="37"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAAlCAMAAAAuuaQGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABL1BMVEX86Dn////86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86DkAAADBjdXlAAAAY3RSTlMAAJ0DJMkEnrUK5Au3FRfM2iIm3ugy3xw56/NG3E72+l1p/Xd4AYWRQtkGoKsHHdMOucIPGc/D1CjgrOMr+VvSPO0QhvA9U/dza/hUbVh9jfFB72YtKsGpcgKQ/nB0VnVVLiDvSy+NAAAAAWJLR0Rkwtq4CQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MHGQojFGrRIUMAAAFrSURBVEjH7dJpOwJRFAfwP5UlsjOWakiRRMgesmUna/b1fP/vQM9tZk7N7XjwUufV3Ln/+7sr6j0Qy+vziv11DY2gpmaR8JNfRFpaCUS+gEiQiLS1U9Ggjk6RkJCublIG9fSKBFGfoQ/0D5Bl0OCQSBAFtUgoTI5B5rBI6JGRCHGDaLQKEY6aeiQ2Zg21DRr3aIk4QgqZKL++xCS5DUpOsci0TcBCUhyZmSWdQXNpO2IEHUKHzC9QpbGoGkuGlnAjyytqwCozAqXNZdY4sR63591QV5BVK93cso6QGduxHfV3N+cQZojtv4T4isjevgofANwADlXo6FhLcOREfZmnqDQsPXKmJRwkrxZxfgG3gdwlO2sXAVyxbvJfQ2fgJiMRX2/bIawbdBkwUhLBkIL1ktwG0gWJsJHbBKobSCQlArgrpvMxSAbuHyQCiNLjE2tqDeD5BVK9vuF740dVM/6F8f7xy2LG36pmlNcndHmfhGBGjs8AAAAASUVORK5CYII="/>
+                        </svg>
+                    </div>
+                    <div class="course__inner"><h4 class="course__title">Расширенный</h4>
+                        <div class="course__subtitle">
+                            <div class="course__subtitle-l">7</div>
+                            <div class="course__subtitle-r">лекций от практикующих
+                                специалистов:
+                            </div>
+                        </div>
+                        <ul class="course-topics">
+                            <li class="course-topics__item">— Стратегия</li>
+                            <li class="course-topics__item">— Контент</li>
+                            <li class="course-topics__item">— Визуальный контент</li>
+                            <li class="course-topics__item">— Копирайтинг</li>
+                            <li class="course-topics__item">— Таргетинг</li>
+                            <li class="course-topics__item">— Продвижение</li>
+                            <li class="course-topics__item">— Как найти клиентов</li>
+                        </ul>
+                        <div class="extra">
+                            <div class="extra__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="34" height="142" viewBox="0 0 34 142">
+                                    <image id="skobka" width="34" height="142"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAACOCAQAAAD+kBLcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxkKJAuomLpxAAACyUlEQVRo3u3aPWgUQRQH8P/tnfiRO5Fo4RfkOEGx8BCDShRBFBRtFQtBECsrO20ETWxstBA7sRO/CtEmiOkFFZVYKBgtTkhMlYNojBEv/i0O383e7c7Ovowcyr5pHrfDLzObvdmb3ZcjVBFgF/ZhOzZjNXrA9G0NL3OCRqQFlvMav7Mt0hGHOMmIcAdyvMSYKDieyDxu4FTbZ6MYxnOMoe46juuhP/2Lt1ltHXUjzoSIt9wRPu5CbOMPg7jPnvYeyUTAlwZxk0Fnn2TkpEE8Zj6qTxJR4EchJrkqulcSctgYx/G4XknIPSHeMadD8pwW5HR8PzvSL8Q8e+P7BdaLvSrZa9Rti4stNkr2xr5C2WKlZDU9UpRsRo8sg1MEbt0yJEMyJEMWiKyTrE+PrJes3OXpNCKy1MgryZ52eToZkiH/KjKvRxZJ9lWPrJWsrkUK2CR5TYsMYKmckTEtckSyZ5jTIUWckHwE9oj92X/e2OlssG9o4g5UOCvEk6QtXvTHi/nCGMdeDVLgA4N4mLjVjEBKHDaIafalRwb4IbQbP5pMhJEtvNv2OOKiC0GAK1jhQQ6GTmUzrroRBGIeiczzrCsRh4xzvzsRhczxCktpiOgtbfol8+9M58+JPZcG8fIvtl1sg+kRL5d9s3n4AoLtS8EjHeJlUQLBCr8JMqJFvCzUYJFTglywI/HfkxnckvyA9r4D7pGRNLhENx2wYNx7qrrpAA28l7ysuxcDwGfJevXIT8lKeqQVeR+INTIkQ/4npF+y3XqkEJF1ZzrjktX0yIRkn7o8nQzJkAzJEACzPpDW27+iHpmSrKxHWk+Stlr7WX+1e3nVO4ovMuJj2pGEX38Hcb2SEC8v4vM+SgK8FCd4KpPwUrABdpaO7NQgnUUsd8y9WM6xTslLOQ2Y41DMsxZnotkWXGLUbB6KnZqto+zK9cR2rkNGAdhvc5d0oa3fowwAAAAASUVORK5CYII="/>
+                                </svg>
+                            </div>
+                            <div class="extra__plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="21" height="21" viewBox="0 0 21 21">
+                                    <image id="_" data-name="+" width="21" height="21"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxkKJBwrSz+2AAAAKklEQVQoz2P8z4AGEAKMqBJMDESDUaWM//8Tq3TA3UqSt9BFRpMLNZQCADSZBiT/vHg7AAAAAElFTkSuQmCC"/>
+                                </svg>
+                            </div>
+                            <div class="extra__item">домашние задания
+                                для закрепления материала
+                            </div>
+                            <div class="extra__item">чек-листы для работы</div>
+                            <div class="extra__item">полезные ссылки, литература
+                                и источники вдохновения
+                            </div>
+                        </div>
+                        <p class="course__price">стоимость: <b class="course__price-bold course__price_old">2 900 ₽<span
+                                class="course__price-new">1 500 ₽</span></b></p>
+                        <div class="course__button"><a class="button" href=" https://learme.ru/auth/payment/course/2571">Записаться
+                            на курс</a></div>
+                    </div>
+                </div>
+                <a class="section5__link" href="https://profilaktika.agency/education/">Другие наши курсы</a>
+            </div>
+        </div>
+        
+
+        <div class="section5-vertical">
+            <div class="section5-vertical__line"></div>
+            <div class="section5-vertical__text">100% smm</div>
+        </div>
+
+        
+    </section>
+
+    
+    
+    
+    <section class="section6">
+        <div class="section6__star only_desktop"></div>
+        <div class="container"><h3 class="grid__title section6__title">Кому подходит этот курс</h3>
+            <div class="suitable">
+                <div class="suitable__item">
+                    <div class="suitable__check only_desktop">
+                        <img src="images/galka.png" alt="">
+                    </div>
+                    <div class="suitable__text">Новичкам в SMM</div>
+                </div>
+                <div class="suitable__item">
+                    <div class="suitable__check only_desktop">
+                        <img src="images/galka.png" alt="">
+                    </div>
+                    <div class="suitable__text">Практикующим<br>SMM-специалистам</div>
+                </div>
+                <div class="suitable__item">
+                    <div class="suitable__check only_desktop">
+                        <img src="images/galka.png" alt="">
+                    </div>
+                    <div class="suitable__text">Руководителям<br>и владельцам бизнеса</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section8" id="teachers">
+        <div class="teachers__grid only_desktop"></div>
+        <div class="container"><h3 class="grid__title section8__title">Преподаватели</h3>
+            <div class="teachers">
+                <div class="teachers__star only_desktop"></div>
+                
+                <div class="teachers__item">
+                    <div class="teachers__decor teachers__decor_1">
+                        <div class="teachers__decor-grid"></div>
+                        <div class="teachers__decor-star"></div>
+                    </div>
+                    <div class="teachers__left">
+                        <div class="teachers__img"
+                             style="background-image: url('https://profilaktika.agency/100smm/nastya.png')"></div>
+                    </div>
+                    <div class="teachers__right">
+                        
+                        <div class="teachers__name">Настя</div>
+                        <div class="teachers__position">Руководитель Education Offline и <br class="only_desktop">SMM-менеджер в PROFILAKTIKA</div>
+                        <div class="teachers__text">Хорошие тексты, качественный
+                            визуальный контент и тёплые <br class="only_desktop">дружеские отношения с клиентом —<br class="only_desktop">
+                            это по ее части.
+                            <div class="teachers__cap">
+                                <img src="images/prepod.png" alt="">
+                            </div>
+                        </div>
+                        <div class="teachers__text">В свободное от работы время Настя ведёт блог о косметике, первый <br class="only_desktop">
+                            раз в жизни смотрит
+                            «Друзей» <br class="only_desktop">и воспитывает кота по кличке Гусь.
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__item teachers__item-only_desktop">
+                    <div class="teachers__decor teachers__decor_1">
+                        <div class="teachers__decor-grid"></div>
+                        <div class="teachers__decor-star"></div>
+                    </div>
+                    <div class="teachers__left">
+                        <div class="teachers__img"
+                             style="background-image: url('https://profilaktika.agency/100smm/katya.png')"></div>
+                    </div>
+                    <div class="teachers__right">
+                        <div class="teachers__name">Катя</div>
+                        <div class="teachers__position">Таргетолог в PROFILAKTIKA </div>
+                        <div class="teachers__text">Работает с рекламой всех проектов компании. Знает все о технической<br class="only_desktop">
+                            части SMM и обязательно расскажет<br class="only_desktop">
+                            вам обо всем на курсе!
+                            <div class="teachers__cap">
+                                <img src="images/prepod.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__item">
+                    <div class="teachers__decor teachers__decor_2">
+                        <div class="teachers__decor-grid"></div>
+                        <div class="teachers__decor-star"></div>
+                    </div>
+                    <div class="teachers__left">
+                        <div class="teachers__img"
+                             style="background-image: url('https://profilaktika.agency/100smm/lena.png')"></div>
+                    </div>
+                    <div class="teachers__right">
+                        <div class="teachers__name">Лена</div>
+                        <div class="teachers__position">SMM-менеджер в PROFILAKTIKA</div>
+                        <div class="teachers__text">Работает с соцсетями более 3-х лет <br class="only_desktop">
+                            и знает все о создании качественного<br class="only_desktop">
+                            и креативного контента. Расскажет,<br class="only_desktop">
+                            как запускать проекты из отпуска<br class="only_desktop">
+                            и готова поделиться своим опытом <br class="only_desktop">
+                            со студентами.
+                            <div class="teachers__cap">
+                                <img src="images/prepod.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__item only_mobile">
+                    <div class="teachers__decor teachers__decor_3">
+                        <div class="teachers__decor-grid"></div>
+                        <div class="teachers__decor-star"></div>
+                    </div>
+                    <div class="teachers__left">
+                        <div class="teachers__img"
+                             style="background-image: url('https://profilaktika.agency/100smm/katya.png')"></div>
+                    </div>
+                    <div class="teachers__right">
+                        <div class="teachers__name">Катя</div>
+                        <div class="teachers__position">Таргетолог в PROFILAKTIKA </div>
+                        <div class="teachers__text">Работает с рекламой всех проектов компании. Знает все о технической<br class="only_desktop">
+                            части SMM и обязательно расскажет<br class="only_desktop">
+                            вам обо всем на курсе!
+                            <div class="teachers__cap">
+                                <img src="images/prepod.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teachers__item">
+                    <div class="teachers__decor teachers__decor_4">
+                        <div class="teachers__decor-grid"></div>
+                        <div class="teachers__decor-star"></div>
+                    </div>
+                    <div class="teachers__left">
+                        <div class="teachers__img"
+                             style="background-image: url('https://profilaktika.agency/100smm/sonya.png')"></div>
+                    </div>
+                    <div class="teachers__right">
+                        <div class="teachers__name">Соня</div>
+                        <div class="teachers__position">Руководитель Education Online<br class="only_desktop"> в PROFILAKTIKA</div>
+                        <div class="teachers__text teachers__text_lm">Соня гуру тайм-менеджмента. Легко управляет пятью проектами и&nbsp;знает <br class="only_desktop">
+                            как выдавать
+                            крутые идеи одну за&nbsp;одной.
+                            
+                           
+                            <div class="teachers__cap">
+                                <img src="images/prepod.png" alt="">
+                            </div>
+                        </div>
+                        <div class="teachers__text">
+                            Расскажет студентам о&nbsp;том, как быть креативным даже когда не&nbsp;хочется,
+                           а&nbsp;также о&nbsp;том, где искать вдохновение и&nbsp;как создать крутую анимацию
+                           на&nbsp;телефоне.    
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section9">
+        <div class="container"><h3 class="grid__title section9__title">Как проходит обучение</h3>
+            <div class="training">
+                <div class="training__item">
+                    <div class="training__icon">
+                        <img src="images/video.png" alt="">
+                    </div>
+                    <div class="training__count">1)</div>
+                    <p class="training__text">Смотрите <br> видео-лекции <br>
+                        в удобное для вас время на любом устройстве</p></div>
+                <div class="training__item">
+                    <div class="training__icon">
+                        <img src="images/strelka.png" alt="">
+                    </div>
+                    <div class="training__count">2)</div>
+                    <p class="training__text">Старайтесь <br>
+                        изучать лекции
+                        <br>в предложенном
+                        порядке</p></div>
+                <div class="training__item">
+                    <div class="training__icon">
+                        <img src="images/zadaniya.png" alt="">
+                    </div>
+                    <div class="training__count">3)</div>
+                    <p class="training__text">Выполняйте
+                        домашние задания
+                        и пользуйтесь
+                        полезными
+                        материалами</p></div>
+                <div class="training__item">
+                    <div class="training__icon training__icon_small">
+                        <img src="images/check.png" alt="">
+                    </div>
+                    <div class="training__count">4)</div>
+                    <p class="training__text">Применяйте свои
+                        знания <br>
+                        на практике!</p></div>
+            </div>
+        </div>
+    </section>
+    <section class="section10">
+        
+        <div class="container"><h3 class="grid__title section10__title">Что  вы<br class="only_mobile"> получите?</h3>
+            <div class="wget">
+                <div class="wget__left">
+                    <div class="wget__item">
+                        <div class="wget__count wget__count_mm">1)</div>
+                        <div class="wget__text">Сможете создавать <br class="only_desktop">
+                            и продвигать проекты
+                        </div>
+                    </div>
+                    <div class="wget__item">
+                        <div class="wget__count">2)</div>
+                        <div class="wget__text">Сможете проводить<br class="only_desktop">
+                            анализ работы
+                        </div>
+                    </div>
+                    <div class="wget__item">
+                        <div class="wget__count">3)</div>
+                        <div class="wget__text">Научитесь контролировать
+                            своих подчиненных
+                        </div>
+                    </div>
+                </div>
+                <div class="wget__right">
+                    <div class="wget__item">
+                        <div class="wget__count">4)</div>
+                        <div class="wget__text">Вы научитесь искать<br class="only_desktop">
+                            клиентов и монетизировать полученные знания
+                        </div>
+                    </div>
+                    <div class="wget__item">
+                        <div class="wget__count">5)</div>
+                        <div class="wget__text">После прохождения курса<br class="only_desktop">
+                            вы получите электронный сертификат о прохождении курса
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wget__star only_desktop"></div>
+        <div class="wget__star_m only_mobile"></div>
+        <div class="wget__grid only_desktop"></div>
+    </section>
+
+    <section class="section3">
+        <div class="section3__star_m"></div>
+        <div class="container"><h3 class="grid__title section3__title">Отзывы студентов</h3>
+            <div class="section3__reviews js-slider-wrapper">
+                <div class="reviews js-slider-items">
+                    <div class="reviews__item js-slider-item">
+                        <div class="reviews__left">
+                            <div class="reviews__img"
+                                 style="background-image: url('https://profilaktika.agency/100smm/polina.png')"></div>
+                        </div>
+                        <div class="reviews__right">
+                            <div class="reviews__name">Полина</div>
+                            <div class="reviews__info">Блогер (19 000 подписчиков<br>в Instagram), SMM-менеджер:</div>
+                            <div class="reviews__text">SMM-курс помог мне по-новому<br class="only_desktop"> взглянуть на соцсети. Теперь<br>я
+                                уверена в своих действиях и знаю, <br> на какие инструменты стоит
+                                обращать внимание, чтобы развивать свои<br class="only_desktop"> соцсети и коммерческие аккаунты.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item js-slider-item">
+                        <div class="reviews__left">
+                            <div class="reviews__img"
+                                 style="background-image: url('https://profilaktika.agency/100smm/kirill.png')"></div>
+                        </div>
+                        <div class="reviews__right">
+                            <div class="reviews__name">Кирилл</div>
+                            <div class="reviews__info">Студент, SMM-менеджер:</div>
+                            <div class="reviews__text">Я посетил курс по SMM, потому<br>что хотел проверить свои знания.<br>Я
+                                занимаюсь продвижением проектов <br class="only_desktop">уже не первый год и благодаря ребятам<br class="only_desktop"> из Профилактики,
+                                я смог почерпнуть<br class="only_desktop"> для себя много нового.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item js-slider-item">
+                        <div class="reviews__left">
+                            <div class="reviews__img"
+                                 style="background-image: url('https://profilaktika.agency/100smm/ulya.png')"></div>
+                        </div>
+                        <div class="reviews__right">
+                            <div class="reviews__name">Юлия</div>
+                            <div class="reviews__info">Event-менеджер в «Сбербанк»:</div>
+                            <div class="reviews__text">Спасибо команде Профилактики<br>за глоток творчества в серых
+                                буднях.<br>Вы напомнили, что можно креативить даже в самых базовых вещах.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item js-slider-item">
+                        <div class="reviews__left">
+                            <div class="reviews__img"
+                                 style="background-image: url('https://profilaktika.agency/100smm/anton.png')"></div>
+                        </div>
+                        <div class="reviews__right">
+                            <div class="reviews__name">Антон</div>
+                            <div class="reviews__info">Организатор туристических<br>поездок:</div>
+                            <div class="reviews__text">Курс от Профилактики наталкивает<br>на новые идеи и помогает
+                                убедиться,<br>что SMM — это один из важнейших инструментов для развития<br class="only_desktop">
+                                бизнеса.
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="pagination js-slider-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section11">
+        <div class="container">
+            
+            <div class="about">
+                <div class="grid__title section11__title">Креативное агентство PROFILAKTIKA <span class="only_desktop"> — это</span></div>
+                <div class="about__subtitle">Крупнейшее SMM-агентство в Черноземье и одно из ведущих <br class="only_desktop"> брендинг-агентств в России с большим опытом работы в Digital.
+                </div>
+                <div class="about__items">
+                    <div class="about__item">
+                        <div class="about__name"><span>300+</span></div>
+                        <div class="about__info">проектов в SMM <br>и Digital</div>
+                    </div>
+                    <div class="about__item about__item_center">
+                        <div class="about__name"><span>250+</span></div>
+                        <div class="about__info">студентов прошедших <br> обучение</div>
+                    </div>
+                    <div class="about__item item_mg-top">
+                        <div class="about__name">более <span>5-ти</span> лет</div>
+                        <div class="about__info">на рынке digital, <br>маркетинга и креатива</div>
+                    </div>
+
+                </div>
+                <a href="https://profilaktika.agency" class="about__link">Перейти на сайт</a>
+            </div>
+        </div>
+    </section>
+    <section class="section13">
+        <div class="container">
+            <div class="benefits">
+                <div class="benefits__item">
+                    <img src="./images/rif18.png" alt="">
+                </div>
+                <div class="benefits__item">
+                    <img src="./images/awards18.png" alt="">
+                </div>
+                <div class="benefits__item">
+                    <img src="./images/awards19.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section12">
+        <div class="container">
+            <div class="section12__header"><h3 class="section12__title">Нам доверяют:</h3><a
+                    class="section12__link section12__link_mobile-hide" href="https://profilaktika.agency/portfolio/">Смотреть
+                портфолио</a></div>
+            <div class="company">
+               
+                <img src="images/partners.png" alt="">
+            </div>
+            <div class="company-mobile">
+                <!-- <img src="images/partners_m.png" alt=""> -->
+            </div>
+            <a class="section12__link section12__link_desktop-hide" href="https://profilaktika.agency/portfolio/">Смотреть
+                портфолио</a></div>
+    </section>
+    <section class="section5" id="packages">
+        <div class="container"><h3 class="grid__title section5__title">Выберите свой курс<br>и&nbsp;запишитесь прямо
+            сейчас!</h3>
+            <div class="course">
+                <div class="course__wrapper">
+                    <div class="course__star only_desktop"></div>
+                    <div class="course__inner"><h4 class="course__title">Базовый</h4>
+                        <div class="course__subtitle">
+                            <div class="course__subtitle-l">7</div>
+                            <div class="course__subtitle-r">лекций от практикующих
+                                специалистов:
+                            </div>
+                        </div>
+                        <ul class="course-topics">
+                            <li class="course-topics__item">— Стратегия</li>
+                            <li class="course-topics__item">— Контент</li>
+                            <li class="course-topics__item">— Визуальный контент</li>
+                            <li class="course-topics__item">— Копирайтинг</li>
+                            <li class="course-topics__item">— Таргетинг</li>
+                            <li class="course-topics__item">— Продвижение</li>
+                            <li class="course-topics__item">— Как найти клиентов</li>
+                        </ul>
+                        <p class="course__price">стоимость: <b class="course__price-bold course__price_old">1 900 ₽<span
+                                class="course__price-new">900 ₽</span></b></p>
+                        <div class="course__button"><a class="button" href="https://learme.ru/auth/payment/course/2585">Записаться
+                            на курс</a></div>
+                    </div>
+                </div>
+                <div class="course__wrapper course__wrapper_full">
+                    <div class="course__star only_desktop"></div>
+                    <div class="course__crown">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67"
+                             height="37" viewBox="0 0 67 37">
+                            <image id="korona" width="67" height="37"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAAlCAMAAAAuuaQGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABL1BMVEX86Dn////86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86Dn86DkAAADBjdXlAAAAY3RSTlMAAJ0DJMkEnrUK5Au3FRfM2iIm3ugy3xw56/NG3E72+l1p/Xd4AYWRQtkGoKsHHdMOucIPGc/D1CjgrOMr+VvSPO0QhvA9U/dza/hUbVh9jfFB72YtKsGpcgKQ/nB0VnVVLiDvSy+NAAAAAWJLR0Rkwtq4CQAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB+MHGQojFGrRIUMAAAFrSURBVEjH7dJpOwJRFAfwP5UlsjOWakiRRMgesmUna/b1fP/vQM9tZk7N7XjwUufV3Ln/+7sr6j0Qy+vziv11DY2gpmaR8JNfRFpaCUS+gEiQiLS1U9Ggjk6RkJCublIG9fSKBFGfoQ/0D5Bl0OCQSBAFtUgoTI5B5rBI6JGRCHGDaLQKEY6aeiQ2Zg21DRr3aIk4QgqZKL++xCS5DUpOsci0TcBCUhyZmSWdQXNpO2IEHUKHzC9QpbGoGkuGlnAjyytqwCozAqXNZdY4sR63591QV5BVK93cso6QGduxHfV3N+cQZojtv4T4isjevgofANwADlXo6FhLcOREfZmnqDQsPXKmJRwkrxZxfgG3gdwlO2sXAVyxbvJfQ2fgJiMRX2/bIawbdBkwUhLBkIL1ktwG0gWJsJHbBKobSCQlArgrpvMxSAbuHyQCiNLjE2tqDeD5BVK9vuF740dVM/6F8f7xy2LG36pmlNcndHmfhGBGjs8AAAAASUVORK5CYII="/>
+                        </svg>
+                    </div>
+                    <div class="course__inner"><h4 class="course__title">Расширенный</h4>
+                        <div class="course__subtitle">
+                            <div class="course__subtitle-l">7</div>
+                            <div class="course__subtitle-r">лекций от практикующих
+                                специалистов:
+                            </div>
+                        </div>
+                        <ul class="course-topics">
+                            <li class="course-topics__item">— Стратегия</li>
+                            <li class="course-topics__item">— Контент</li>
+                            <li class="course-topics__item">— Визуальный контент</li>
+                            <li class="course-topics__item">— Копирайтинг</li>
+                            <li class="course-topics__item">— Таргетинг</li>
+                            <li class="course-topics__item">— Продвижение</li>
+                            <li class="course-topics__item">— Как найти клиентов</li>
+                        </ul>
+                        <div class="extra">
+                            <div class="extra__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="34" height="142" viewBox="0 0 34 142">
+                                    <image id="skobka" width="34" height="142"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAACOCAQAAAD+kBLcAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxkKJAuomLpxAAACyUlEQVRo3u3aPWgUQRQH8P/tnfiRO5Fo4RfkOEGx8BCDShRBFBRtFQtBECsrO20ETWxstBA7sRO/CtEmiOkFFZVYKBgtTkhMlYNojBEv/i0O383e7c7Ovowcyr5pHrfDLzObvdmb3ZcjVBFgF/ZhOzZjNXrA9G0NL3OCRqQFlvMav7Mt0hGHOMmIcAdyvMSYKDieyDxu4FTbZ6MYxnOMoe46juuhP/2Lt1ltHXUjzoSIt9wRPu5CbOMPg7jPnvYeyUTAlwZxk0Fnn2TkpEE8Zj6qTxJR4EchJrkqulcSctgYx/G4XknIPSHeMadD8pwW5HR8PzvSL8Q8e+P7BdaLvSrZa9Rti4stNkr2xr5C2WKlZDU9UpRsRo8sg1MEbt0yJEMyJEMWiKyTrE+PrJes3OXpNCKy1MgryZ52eToZkiH/KjKvRxZJ9lWPrJWsrkUK2CR5TYsMYKmckTEtckSyZ5jTIUWckHwE9oj92X/e2OlssG9o4g5UOCvEk6QtXvTHi/nCGMdeDVLgA4N4mLjVjEBKHDaIafalRwb4IbQbP5pMhJEtvNv2OOKiC0GAK1jhQQ6GTmUzrroRBGIeiczzrCsRh4xzvzsRhczxCktpiOgtbfol8+9M58+JPZcG8fIvtl1sg+kRL5d9s3n4AoLtS8EjHeJlUQLBCr8JMqJFvCzUYJFTglywI/HfkxnckvyA9r4D7pGRNLhENx2wYNx7qrrpAA28l7ysuxcDwGfJevXIT8lKeqQVeR+INTIkQ/4npF+y3XqkEJF1ZzrjktX0yIRkn7o8nQzJkAzJEACzPpDW27+iHpmSrKxHWk+Stlr7WX+1e3nVO4ovMuJj2pGEX38Hcb2SEC8v4vM+SgK8FCd4KpPwUrABdpaO7NQgnUUsd8y9WM6xTslLOQ2Y41DMsxZnotkWXGLUbB6KnZqto+zK9cR2rkNGAdhvc5d0oa3fowwAAAAASUVORK5CYII="/>
+                                </svg>
+                            </div>
+                            <div class="extra__plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     width="21" height="21" viewBox="0 0 21 21">
+                                    <image id="_" data-name="+" width="21" height="21"
+                                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAQAAAADHm0dAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBxkKJBwrSz+2AAAAKklEQVQoz2P8z4AGEAKMqBJMDESDUaWM//8Tq3TA3UqSt9BFRpMLNZQCADSZBiT/vHg7AAAAAElFTkSuQmCC"/>
+                                </svg>
+                            </div>
+                            <div class="extra__item">домашние задания
+                                для закрепления материала
+                            </div>
+                            <div class="extra__item">чек-листы для работы</div>
+                            <div class="extra__item">полезные ссылки, литература
+                                и источники вдохновения
+                            </div>
+                        </div>
+                        <p class="course__price">стоимость: <b class="course__price-bold course__price_old">2 900 ₽<span
+                                class="course__price-new">1 500 ₽</span></b></p>
+                        <div class="course__button"><a class="button" href=" https://learme.ru/auth/payment/course/2571">Записаться
+                            на курс</a></div>
+                    </div>
+                </div>
+                <a class="section5__link" href="https://profilaktika.agency/education/">Другие наши курсы</a>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__left"><h3 class="grid__title footer__title">Есть вопросы? Свяжитесь с нами!</h3>
+                <form class="form js-form" method="POST" action="#">
+                    <div class="footer__flex">
+                        <div class="footer__wrap">
+                            <div class="form__input"><input class="input" type="text" name="name" placeholder="ФИО"></div>
+                            <div class="form__input"><input class="input" type="text" name="email" placeholder="Почта"></div>
+                            <div class="form__input"><input class="input" type="text" name="phone" placeholder="Телефон"></div>    
+                        </div>
+                        <div class="footer__wrap">
+                            <div class="form__input"><textarea class="textarea" name="message"
+                                                            placeholder="Сообщение"></textarea></div>    
+                        </div>    
+                    </div>
+                    
+                    <div class="footer__flex_end">
+                    <div class="form__button">
+                        <button class="button" type="submit">Отправить</button>
+                    </div>    
+                    </div>
+                    
+                    <p class="form__success js-form-success"></p></form>
+            </div>
+            <div class="footer__right"><h4 class="footer__subtitle">Наши контакты:</h4>
+
+                <div class="footer__info-wrap">
+                    <a href="tel:+74732516599">+7 (473) 251-65-99</a> 
+                    <div class="only_desktop">|</div>  
+                    <a href="mailto:education@profilaktika.agency">education@profilaktika.agency</a>
+                    <div class="only_desktop">|</div>  
+                    <a class="only_desktop" href="https://profilaktika.agency/">profilaktika.agency</a>
+
+                    <p class="only_mobile">Россия, г. Воронеж <br>
+                        ул. Комиссаржевской, 10 <br>
+                        БЦ «Премьер», офис 804</p>
+                </div>
+                
+                <div>
+                    <div class="footer-mobile">
+                        <h5>Мы в Instagram</h5>
+                        <a href="https://www.instagram.com/profilaktika.education/?hl=ru" target="_blank" class="social__item">
+                            <img src="./images/insta.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://profilaktika.agency/100smm/js/vendors.7a98d53d335f28cf8ce4.js"></script>
+<script type="text/javascript" src="https://profilaktika.agency/100smm/js/app.7a98d53d335f28cf8ce4.js"></script>
+
+</body>
+</html>
