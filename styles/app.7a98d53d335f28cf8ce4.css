@@ -2283,7 +2283,8 @@ textarea {
 
     .pagination {
         display: block;
-        text-align: center
+        text-align: center;
+        margin-left: -40px;
     }
 
     .pagination__item {
@@ -2936,14 +2937,16 @@ textarea {
 .blur {
     pointer-events: none;
     position: fixed;
-    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: 0; */
     background-image: url(../images/blur.png);
     background-repeat: repeat;
     z-index: 5;
-    opacity: 0.1;
+    /* opacity: 0.1; */
 }
 
 .only_desktop {
