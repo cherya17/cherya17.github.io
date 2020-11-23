@@ -587,12 +587,6 @@ body a {
     width: 100%;
     padding: 25px 0;
   }
-  .background__text {
-    font-size: 14px;
-  }
-  .logo {
-    font-size: 18px;
-  }
   .container {
     width: 85%;
     padding-top: 50px;
@@ -621,7 +615,6 @@ body a {
     height: auto;
     align-items: center;
     /* height: 200vw; */
-    font-size: 0.8em;
   }
   .card__image{
     width: calc(100% - 40px);
@@ -638,11 +631,26 @@ body a {
     width: 100%;
     margin-bottom: 20px;
   }
+  .card {
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .background__text {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 400px) {
   .card {
-    font-size: 0.8em;
+    font-size: 20px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  .background__text {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
