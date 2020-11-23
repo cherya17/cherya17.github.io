@@ -8,6 +8,8 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .background::before {
@@ -20,6 +22,7 @@ body {
   /* right: 0; */
   width: 100%;
   z-index: 0;
+  max-width: 100vw;
 }
 
 /* .shadow {
@@ -576,6 +579,10 @@ body a {
 
 
 @media (max-width: 690px) {
+  .top-wrap {
+    height: auto;
+    padding: 60px 0;
+  }
   .map {
     width: 100%;
     padding: 25px 0;
